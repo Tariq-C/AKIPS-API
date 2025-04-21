@@ -1,9 +1,3 @@
-#!/opt/bcgov/bin/perl
-# Developer: Tariq Chatur
-# Description:
-#  This module contains the NM-DB related functions of AKIPS API Wrapper
-#
-# Last Modified: March 20th 2025
 package API::AKIPS::NMDB;
 
    use API::AKIPS::Rest;
@@ -13,7 +7,8 @@ package API::AKIPS::NMDB;
 
       my $class = shift;
       my $self = {
-            rest     =>  API::AKIPS::Rest->new()
+            rest     =>  API::AKIPS::Rest->new(),
+            base_url => #Put your base url here
       };
       bless $self,$class;
       return $self;
